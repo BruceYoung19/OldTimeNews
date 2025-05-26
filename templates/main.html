@@ -2,87 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>The Daily Chronicle</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Old Time News</title>
+    <link rel= 'stylesheet' href="{{ url_for('static', filename='style.css') }}">
 </head>
-<style>
-body {
-    background-color: #f5f5dc;
-    font-family: 'Times New Roman', Times, serif;
-    color: #222;
-    margin: 0;
-    padding: 20px;
-}
 
-.newspaper {
-    max-width: 900px;
-    margin: auto;
-    background-color: #fff;
-    padding: 40px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    border: 1px solid #ccc;
-}
-
-header {
-    text-align: center;
-    border-bottom: 2px solid #000;
-    margin-bottom: 20px;
-}
-
-header h1 {
-    font-size: 3em;
-    margin: 0;
-    letter-spacing: 2px;
-}
-
-.date {
-    font-style: italic;
-    margin-top: 5px;
-}
-
-.columns {
-    column-count: 3;
-    column-gap: 40px;
-}
-
-article {
-    break-inside: avoid;
-    margin-bottom: 20px;
-}
-
-article h2 {
-    font-size: 1.2em;
-    margin-bottom: 5px;
-    border-bottom: 1px solid #000;
-}
-
-</style>
 <body>
 
     <div class="newspaper">
         <header>
-            <h1>The Daily Chronicle</h1>
-            <p class="date">Wednesday, May 21, 2025</p>
+            <h1>Old Time News</h1>
+            <p class="date">{{today_date.strftime('%d %B %Y ')}}</p>
         </header>
 
         <section class="columns">
             <article>
-                <h2>Historic Discovery Unearthed</h2>
-                <p>Archaeologists have uncovered a long-lost city beneath the sands of the Sahara, revealing secrets of an ancient civilization...</p>
+                <h2> Clean </h2>
+                <p> An fresh newspaper that is untouched. This is designed to be unblemished. </p>
             </article>
             <article>
-                <h2>Markets in Turmoil</h2>
-                <p>Global markets experienced a sharp downturn today as investors reacted to unexpected economic data and geopolitical tensions...</p>
+                <h2> Minimalist </h2>
+                <p> The function of this newspaper is to focus to be purposeful for only reading the news.  </p>
             </article>
             <article>
-
-                <h2>Weather Forecast</h2>
-                <p>Expect cloudy skies with a chance of rain in the afternoon. Temperatures will range between 12°C and 18°C...</p>
+                <h2>Search</h2>
+                <p> Search for what is required</p>
+                <a href="">Search here</a>
             </article>
         </section>
     </div>
 </body>
 </html>
-
- 
-
