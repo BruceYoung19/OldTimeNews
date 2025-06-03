@@ -1,2 +1,10 @@
-<HTML>
-</HTML>
+<html>
+ <link rel= 'stylesheet' href="{{ url_for('static', filename='searchcss.css') }}">
+
+ <form method="POST" action="/submit">
+  <input type="text" name="search_subject" id="search_subject" placeholder=" search"></input>
+  <input type="submit" id="submit" value="search">
+
+ </form> 
+
+</html>

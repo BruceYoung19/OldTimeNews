@@ -1,0 +1,32 @@
+body{
+  Background:#f5f5dc;
+}
+
+form{
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   height:100vh; 
+}
+
+#submit{
+  background:white;
+  border-color:white;
+  box-shadow:none;
+  border:none;
+  width:50px;
+  height:100px;
+  border-top-right-radius:12px;
+  border-bottom-right-radius:12px;
+}
+
+#search_subject{
+  background:white;
+  border-color:white;
+  border: none;
+  width:400px;
+  height:100px;
+  border-top-left-radius:12px;
+  border-bottom-left-radius:12px;
+  font-size:25px;
+}
