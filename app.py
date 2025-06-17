@@ -1,5 +1,6 @@
-from flask import Flask,render_template,request
+from flask import Flask,render_template,request,jsonify
 from datetime import date
+import news
 
 app = Flask(__name__)
 
@@ -15,8 +16,8 @@ def search():
 @app.route('/submit',methods=['POST','GET'])
 def submit():
     subject = request.form['search_subject']
-    print(subject)
-    return "result"
+    news_data = news.searchInput(subject)
+    return render_template('submit.html',news=jsonify(news_data))
 
 if __name__ == '__main__':
     app.run(debug=True)

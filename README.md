@@ -10,5 +10,5 @@ pip install -r requirement.txt
 ```
 
 
-### [Changealog](https://github.com/BruceYoung19/OldTimeNews/blob/main/CHANGELOG.md)
+### [Changelog](https://github.com/BruceYoung19/OldTimeNews/blob/main/CHANGELOG.md)
 
