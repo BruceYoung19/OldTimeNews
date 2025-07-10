@@ -1,3 +1,23 @@
 <html>
-  <p>{{news.title}}</p>
+  <link rel= 'stylesheet' href="{{ url_for('static', filename='submitstyle.css') }}">
+
+  <div class= "info-bar" >
+    <h1> SEARCHED:{{subject}} </h1>
+    <p2> NUMBER OF RESULTS: {{num}} | DATE : {{date}}  </p2>
+  </div>
+  
+  <div class= "bar" >
+  <p> </p> 
+  </div>
+ 
+  {% for post in news %}
+  <div class ="news-box ">
+    <h2 class="intersect-text"> {{ post.title }}  </h2>
+    <p> {{ post.description }} </p>
+    <img src= {{post.urlToImage}} width="200" height="200"></img>
+    <a href= {{post.url}} class = "intersect-text"> Full article</a>
+  </div>
+
+  {% endfor %}
+
 </html>

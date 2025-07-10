@@ -2,10 +2,11 @@ from flask import Flask,render_template,request,jsonify
 from datetime import date
 
 import json
+
+# For secrets
 import configparser
 import httpx
 import requests
-
 
 def getapikey():
     config = configparser.ConfigParser()
@@ -25,22 +26,28 @@ def search():
 
 @app.route('/submit',methods=['POST','GET'])
 def submit():
+    today = date.today()
     subject = request.form['search_subject']
-    news_data = news.searchInput(subject)
+
+    api_url = "https://newsapi.org/v2/everything?q="+subject+"&apiKey="+getapikey()
     
-    articles = news_data.get('articles',[])
-    # TODO: Need to set a condiion for this to break if not complete.
+    response = requests.get(api_url)
+    data = response.json()
     
-    return render_template('submit.html',news=articles)
+    status = data.get('status')
+    articles = data.get('articles',[])
+    # TODO: Need to set a condiion for this to break if not complete .
+    return render_template('submit.html',news=articles,num=data.get('totalResults'),subject=subject,date=today)
 
 @app.route('/test',methods=['GET'])
 def test_data():
+    
     api_url = "https://newsapi.org/v2/everything?q="+"Tesla"+"&apiKey="+getapikey()
     
     response = requests.get(api_url)
     news_posts = response.json()    
-    # print(news_posts)
     articles = news_posts.get('articles',[])
+    
     return render_template('test.html',posts=articles)
 
 if __name__ == '__main__':

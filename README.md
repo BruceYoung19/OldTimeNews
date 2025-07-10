@@ -1,8 +1,13 @@
 # OldTimeNews
-A wesbite that is of the old style newspaper.
+A wesbite that is of the old style newspaper. T
 
 ## Requirements:
-Please install using the requirements below:
+### Software
+- Python3
+- NewsAPI-[link](https://newsapi.org/)
+
+To install using the python requirements.
+Run following commands below:
 
 ```
 pip install -r requirement.txt
@@ -13,6 +18,7 @@ pip install -r requirement.txt
   <img src="screenshots/Homepage.png" width="300" />
   <img src="screenshots/SearchBeta.png" width="300" />
 </div>
+
 
 ### [Changelog](https://github.com/BruceYoung19/OldTimeNews/blob/main/CHANGELOG.md)
 
