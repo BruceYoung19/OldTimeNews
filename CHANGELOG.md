@@ -1,3 +1,14 @@
+commit [c1d5eaa568052693758289418dd69688ce9b69d5](https://github.com/BruceYoung19/OldTimeNews/commit/c1d5eaa568052693758289418dd69688ce9b69d5)
+
+Date:   Thu Jul 10 20:22:15 2025 +1200
+
+    <SEARCH> [WEBSITE]: Description
+
+            - Completed Submit form
+            - Updated README.md
+            - Search is Working
+            - HTML + CSS created and added.
+
 commit [7ec442b0f88133dff0d2ce44d89c9465210f7ce1](https://github.com/BruceYoung19/OldTimeNews/commit/7ec442b0f88133dff0d2ce44d89c9465210f7ce1)
 Date:   Mon Jul 7 20:16:14 2025 +1200
 

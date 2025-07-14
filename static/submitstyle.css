@@ -18,15 +18,20 @@ h1 {
   text-align: center;
 }
 
+a{
+ padding:2px;
+}
+
 p2 {
  letter-spacing: -0.5px;
-  margin: 0;
-  padding: 0;
-  font-size: 10.5px;
+ margin: 0;
+ padding: 0;
+ font-size: 10.5px;
 }
 
 h2{
   margin:0;
+  padding:2px;
 }
 
 p{
@@ -34,18 +39,18 @@ p{
 }
 
 .intersect-text {
-      display: flex;
-      align-items: center;
-      text-align: center;
-      width: 100%;
+ display: flex;
+ align-items: center;
+ text-align: center;
+ width: 100%;
 }
 
 .intersect-text::before,
 .intersect-text::after {
-      content: "";
-      flex: 1;
-      border-bottom: 1px solid black;
-      margin: 0 10px;
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid black;
+  margin: 0 10px;
 }
 
 
