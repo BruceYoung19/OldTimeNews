@@ -1,3 +1,10 @@
+commit [050986f570db6cf335a657826371d827f1c4945d](https://github.com/BruceYoung19/OldTimeNews/commit/050986f570db6cf335a657826371d827f1c4945d)
+Date:   Mon Jul 14 19:43:48 2025 +1200
+
+    <SEARCH> [HTML,css]: Description
+            - Search Bar changed
+            - README.md Reformatted
+
 commit [c1d5eaa568052693758289418dd69688ce9b69d5](https://github.com/BruceYoung19/OldTimeNews/commit/c1d5eaa568052693758289418dd69688ce9b69d5)
 
 Date:   Thu Jul 10 20:22:15 2025 +1200

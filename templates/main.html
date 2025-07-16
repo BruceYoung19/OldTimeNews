@@ -12,6 +12,8 @@
         <header>
             <h1>Old Time News</h1>
             <p class="date">{{today_date.strftime('%d %B %Y ')}}</p>
+            <a> Do you want to take a test? </a>
+            <a href={{ url_for('test_search') }}>Try me out</a>
         </header>
 
         <section class="columns">
@@ -29,6 +31,8 @@
                 <a href="{{ url_for('search')}}">Search here</a>
             </article>
         </section>
+       
     </div>
+    
 </body>
 </html>

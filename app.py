@@ -36,13 +36,19 @@ def submit():
     
     status = data.get('status')
     articles = data.get('articles',[])
-    # TODO: Need to set a condiion for this to break if not complete .
+    # TODO: Need to set a condiion for this to break if not complete, Filter for the news websites
     return render_template('submit.html',news=articles,num=data.get('totalResults'),subject=subject,date=today)
+
+@app.route('/test_search')
+def test_search():
+    return render_template('test_search.html')
 
 @app.route('/test',methods=['GET'])
 def test_data():
     
-    api_url = "https://newsapi.org/v2/everything?q="+"Tesla"+"&apiKey="+getapikey()
+    subject = request.form['search_subject']
+
+    api_url = "https://newsapi.org/v2/everything?q="+subject+"&apiKey="+getapikey()
     
     response = requests.get(api_url)
     news_posts = response.json()    
