@@ -1,6 +1,9 @@
 <h1> Test Data - </h1>
 <body>
   {% for post in posts %}
-  <li><a>{{ post.title }}</a></li>
+  <li><a> Title: {{ post.title }}</a></li>
+  <li><a> Url: {{ post.url }}</a></li>
+  <li><a> Source: {{ post.source.name}}</a></li>
+  <br>
   {% endfor %}
 </body>

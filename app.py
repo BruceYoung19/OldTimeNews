@@ -43,7 +43,7 @@ def submit():
 def test_search():
     return render_template('test_search.html')
 
-@app.route('/test',methods=['GET'])
+@app.route('/test',methods=['POST','GET'])
 def test_data():
     
     subject = request.form['search_subject']
